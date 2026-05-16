@@ -1,7 +1,5 @@
 # Resultados dos Testes
 
-# Resumo Executivo
-
 Foram executados testes funcionais na API Restful Booker com foco em:
 
 - Autenticação
@@ -9,18 +7,6 @@ Foram executados testes funcionais na API Restful Booker com foco em:
 - Validações
 - Tratamento de erros
 - Filtros de busca
-
----
-
-# Resultado Geral
-
-| Categoria              | Total | Sucesso | Falha |
-|------------------------|-------|----------|--------|
-| Autenticação           | 2     | 2        | 0      |
-| CRUD                   | 8     | 7        | 1      |
-| Validações             | 5     | 3        | 2      |
-| Tratamento de erros    | 3     | 3        | 0      |
-| Filtros                | 2     | 2        | 0      |
 
 ---
 
@@ -38,6 +24,10 @@ Foram executados testes funcionais na API Restful Booker com foco em:
 
 ![Ping](./imagens/ct001.png)
 
+## Observação
+
+Ping criado com sucesso
+
 ---
 
 # CT002 - Login válido
@@ -49,6 +39,10 @@ Foram executados testes funcionais na API Restful Booker com foco em:
 ## Evidência
 
 ![Login valido](./imagens/ct002.png)
+
+## Observação
+
+Auth criado com sucesso
 
 
 ---
@@ -63,6 +57,10 @@ Foram executados testes funcionais na API Restful Booker com foco em:
 
 ![Login invalido](./imagens/ct003.png)
 
+## Observação
+
+Erro ao realizar login
+
 ---
 
 # CT004 - Criar reserva válida
@@ -75,6 +73,9 @@ Foram executados testes funcionais na API Restful Booker com foco em:
 
 ![Criar reserva](./imagens/ct004.png)
 
+## Observação
+
+Reserva criada com sucesso
 
 ---
 
@@ -82,12 +83,11 @@ Foram executados testes funcionais na API Restful Booker com foco em:
 
 ## Resultado
 
-**PASSOU**
+**FALHOU**
 
 ## Evidência
 
 ![Criar reserva sem first name](./imagens/ct005.png)
-
 
 ## Observação
 
@@ -115,11 +115,13 @@ Campo obrigatório não validado corretamente.
 
 ## Resultado
 
-**FALHOU**
+**PASSOU**
 
 ## Evidência
 
 ![Criar reserva sem bookingdates](./imagens/ct007.png)
+
+## Observação
 
 Erro retornado corretamente.
 
@@ -135,6 +137,8 @@ Erro retornado corretamente.
 
 ![Buscar reserva existente](./imagens/ct008.png)
 
+## Observação
+
 Dados corretos retornados
 
 ---
@@ -143,14 +147,17 @@ Dados corretos retornados
 
 ## Resultado
 
-**FALHOU**
+**PASSOU**
 
 ## Evidência
 
 ![Buscar reserva inexistente](./imagens/ct009.png)
 
+## Observação
+
 Dados não encontrados
 
+---
 
 # CT010 - Atualizar reserva com token válido
 
@@ -162,6 +169,8 @@ Dados não encontrados
 
 ![Atualizar reserva com token válido](./imagens/ct0010.png)
 
+## Observação
+
 Dados atualizados
 
 ---
@@ -170,11 +179,13 @@ Dados atualizados
 
 ## Resultado
 
-**FALHOU**
+**PASSOU**
 
 ## Evidência
 
 ![Atualizar reserva sem token](./imagens/ct0011.png)
+
+## Observação
 
 Acesso negado
 
@@ -190,6 +201,8 @@ Acesso negado
 
 ![Atualização parcial](./imagens/ct0012.png)
 
+## Observação
+
 Apenas campos enviados devem ser alterados
 
 ---
@@ -204,6 +217,8 @@ Apenas campos enviados devem ser alterados
 
 ![Deletar reserva com token valido](./imagens/ct0013.png)
 
+## Observação
+
 Reserva deletada
 
 ---
@@ -212,11 +227,13 @@ Reserva deletada
 
 ## Resultado
 
-**FALHOU**
+**PASSOU**
 
 ## Evidência
 
 ![Deletar reserva sem autenticação](./imagens/ct0014.png)
+
+## Observação
 
 Reserva não deletada, acesso negado
 
@@ -232,6 +249,8 @@ Reserva não deletada, acesso negado
 
 ![Buscar reservas por firt name](./imagens/ct0015.png)
 
+## Observação
+
 Reserva encontrada pelo first name
 
 ---
@@ -246,6 +265,8 @@ Reserva encontrada pelo first name
 
 ![Buscar reservas por período](./imagens/ct0016.png)
 
+## Observação
+
 Reserva encontrada por período
 
 ---
@@ -254,11 +275,13 @@ Reserva encontrada por período
 
 ## Resultado
 
-**FALHOU**
+**PASSOU**
 
 ## Evidência
 
 ![Enviar body invalido](./imagens/ct0017.png)
+
+## Observação
 
 Body inválido
 
@@ -268,13 +291,17 @@ Body inválido
 
 ## Resultado
 
-**FALHOU**
+**PASSOU**
 
 ## Evidência
 
 ![Validar tipo incorreto de dados](./imagens/ct0018.png)
 
+## Observação
+
 API deve rejeitar request
+
+
 
 # Conclusão
 
